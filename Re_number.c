@@ -2,7 +2,7 @@
 
 
 /*calculate for Re number based on pure FLUID*/
-real RE_FLUID(real fluid_vis,real fluid_vel, real fluid_den，real  characteristic_length)
+real RE_FLUID(real fluid_vis,real fluid_vel, real fluid_den, real  characteristic_length)
 {
   return (fluid_vel*fluid_den*characteristic_length/fluid_vis);
 }
