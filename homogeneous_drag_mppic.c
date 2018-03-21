@@ -1,6 +1,7 @@
 #include "Re_number.h"
 
 /*Theory derive from the paper "MP-PIC simulation of CFB riser with EMMS-based drag model" */
+/*Egrun and wen yu*/
 real COF_B_P(real g_den, real g_void, real g_vel, real g_vis, real s_void, real p_vel,real p_diam,real p_drag_cof)
 {
 	if (g_void<0.8)
