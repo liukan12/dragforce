@@ -8,13 +8,13 @@ real RE_FLUID(real fluid_vis,real fluid_vel, real fluid_den，real  characterist
 }
 
 /*calculate for Re number based on particle flow*/
-real REN_PFLUID(real fluid_vis, real fluid_vel, real par_vel, real par_diam)
+real REN_PFLUID(real fluid_vis, real fluid_vel, real fluid_den, real par_vel, real par_diam)
 {
   return (fabs(fluid_vel-par_vel)*fluid_den*par_diam/fluid_vis);
 }
 
 /*Calculate for Re number based on particle flow with void ratio*/
-real REP_PFLUID(real fluid_vis, real fluid_vel, real fluid_void, real par_vel, real par_diam)
+real REP_PFLUID(real fluid_vis, real fluid_vel, real fluid_void, real fluid_den, real par_vel, real par_diam)
 {
   return (fabs(fluid_vel-par_vel)*fluid_den*par_diam*fluid_void/fluid_vis);
 }
